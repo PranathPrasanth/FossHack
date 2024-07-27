@@ -5,6 +5,14 @@ body {
   margin: 0;
   padding: 0;
 }
+#intro{
+  background-image: url('images/frontpage.png');
+  /* background-size: cover; */
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
 
 .container {
   width: 80%;
