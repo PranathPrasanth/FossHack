@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
-  background-image:url('images/bg.jpg');
+  background-image:url('./images/bg.jpg');
   margin: 0;
   padding: 0;
 }
@@ -57,9 +57,22 @@ header h1 {
   align-items: center;
   margin-top: 20px;
 }
+
+.GitHub-linkedin {
+  display: flex;
+  margin-top: 20px;
+}
+.form-github {
+  margin-left: 28%;
+}
+.form-linkedin {
+  margin-left: 10px;
+
+}
+
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 130%;
   padding: 9px;
   border: 1px solid #ddd;
   border-radius: 5px;
