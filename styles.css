@@ -20,10 +20,18 @@ header {
 }
 #intro{
   background-image: url('images/frontpage.png');
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
+}
+.intro_btn{
+  /* position: relative; */
+  margin-left: 46%;
+  top: 20px; /* Adjust top margin as needed */
+  left: 50%;
+  /* transform: translateX(-50%); */
 }
 
 .container {
