@@ -5,6 +5,19 @@ body {
   margin: 0;
   padding: 0;
 }
+header {
+  position: relative;
+  height: 80px; /* Adjust as needed */
+  background-color: #f8f9fa; /* Background color for the header */
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  width: auto; /* Maintains aspect ratio */
+}
 #intro{
   background-image: url('images/frontpage.png');
   /* background-size: cover; */
