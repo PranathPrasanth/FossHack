@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Selection</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="selection_container">
+    <div class="container">
         <header>
             <h1>Select an Option</h1>
         </header>
         <main>
-            <div class="selection_options">
-                <p>Connect with:</p>
-                <button class="linkedin" onclick="connectLinkedIn()">
-                    <img src="objects/linkedin.png" alt="LinkedIn">
-                </button>
-
-                <button class="github" onclick="connectGitHub()">
-                    <img src="objects/github.png" alt="GitHub">
-                </button>
+            <div class="button-container">
+                <p>Connect with :</p>
+                <button style="font-size:24px" onclick="connectLinkedIn()"> <i class="fa fa-linkedin-square"></i></button>
+                <button style="font-size:24px" onclick="connectGitHub()"> <i class="fa fa-github"></i></button>
             </div>
-                <div class="resume_builder">
-                    <button onclick="goToResumeBuilder()">Normal Resume Builder</button>
-                </div>
+                <button onclick="goToResumeBuilder()">Normal Resume Builder</button>
                 
+                <div class="previous_works">
+                    <button onclick="goToPreviousWorks()">Previous Works</button>
+                </div>
+            
         </main>
     </div>
     <script>
         function connectLinkedIn() {
+            // Add functionality to connect with LinkedIn
             alert('Connecting with LinkedIn (Functionality to be added)');
         }
 
         function connectGitHub() {
+            // Add functionality to connect with GitHub
             alert('Connecting with GitHub (Functionality to be added)');
         }
 
         function goToResumeBuilder() {
             window.location.href = 'resume_builder.html';
+        }
+        function goToPreviousWorks() {
+            window.location.href = 'previous_works.html';
         }
     </script>
 </body>
