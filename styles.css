@@ -11,8 +11,20 @@ header {
   /* Background color for the header */
 }
 
-.logo {
+.title {
   position: absolute;
+  margin-left: 38rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 80px; /* Adjust as needed */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  position: left;
   top: 10px; /* Adjust as needed */
   left: 10px; /* Adjust as needed */
   height: 70px; /* Adjust as needed */
@@ -20,16 +32,15 @@ header {
 }
 #intro{
   background-image: url('images/frontpage.png');
-  /* background-size: cover; */
-  background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
     
 }
-.intro_btn{
+.start-button{
   /* position: relative; */
   margin-left: 46%;
-  top: 20px; /* Adjust top margin as needed */
+  margin-top: 3rem; /* Adjust top margin as needed */
   left: 50%;
   /* transform: translateX(-50%); */
 }
