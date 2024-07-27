@@ -5,6 +5,14 @@ body {
   margin: 0;
   padding: 0;
 }
+#intro{
+  background-image: url('images/frontpage.png');
+  /* background-size: cover; */
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
 
 .container {
   width: 80%;
@@ -54,7 +62,7 @@ header h1 {
 .builder-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   margin-top: 20px;
 }
 
@@ -96,7 +104,7 @@ button {
   display: inline-block;
   padding: 12px 24px;
   font-size: 1em;
-  color: #fff;
+  color: #ffffff;
   background-color: #007bff;
   border: none;
   border-radius: 5px;
