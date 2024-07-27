@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="selection_container">
+        <header>
+            <h1>Select an Option</h1>
+        </header>
+        <main>
+            <div class="selection_options">
+                <p>Connect with:</p>
+                <button class="linkedin" onclick="connectLinkedIn()">
+                    <img src="objects/linkedin.png" alt="LinkedIn">
+                </button>
+
+                <button class="github" onclick="connectGitHub()">
+                    <img src="objects/github.png" alt="GitHub">
+                </button>
+            </div>
+                <div class="resume_builder">
+                    <button onclick="goToResumeBuilder()">Normal Resume Builder</button>
+                </div>
+                
+        </main>
+    </div>
+    <script>
+        function connectLinkedIn() {
+            alert('Connecting with LinkedIn (Functionality to be added)');
+        }
+
+        function connectGitHub() {
+            alert('Connecting with GitHub (Functionality to be added)');
+        }
+
+        function goToResumeBuilder() {
+            window.location.href = 'resume_builder.html';
+        }
+    </script>
+</body>
+</html>
