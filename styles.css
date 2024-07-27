@@ -1,9 +1,17 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
-  background-image:url('images/bg.jpg');
+  background-image:url('images/pexels-hngstrm-1939485.jpg');
   margin: 0;
   padding: 0;
+}
+#intro{
+  background-image: url('images/frontpage.png');
+  /* background-size: cover; */
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 .container {
