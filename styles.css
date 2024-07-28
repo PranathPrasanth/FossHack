@@ -2,6 +2,25 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
   background-image:url('./images/bg.jpg');
+<<<<<<< HEAD
+  margin: 0;
+  padding: 0;
+ 
+
+}
+body cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* margin: 0; */
+  background-color: #f0f0f0;
+}
+.cont{
+  overflow: hidden;
+    white-space: nowrap;
+=======
+>>>>>>> f97d598e618c0a9f3d5a01596da5d21711f70f26
 }
 header {
   position: relative;
@@ -24,14 +43,27 @@ header {
   position: absolute;
   margin-left: 38rem;
   margin-top: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color:cornflowerblue;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
+.run_words{
+  display: inline-block;
+  font-size: 2em;
+  color: #333;
+  animation: moveText 10s linear infinite;
+}
+@keyframes run_words {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
 .navbar {
   display: flex;
   align-items: center;
