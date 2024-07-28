@@ -22,11 +22,10 @@
             <div class ="builder-header">
                 <h1>Resume Builder</h1>
                 <!-- <p class="description">Build your resume with ease!</p> -->
-                <div class="github-form">
-                    <label for="name">Username</label>
-                    <input type="text" id="username" name="username" required>
-                    <button class="github-button" style="font-size:24px"> <i class="fa fa-github"></i></button>
-                </div>
+                <div class="input-container">
+                    <input type="text" id="usernameInput" placeholder="Enter username">
+                </div>            
+                        <button onclick="sendPostRequest()" class="github-button" id="myButton" style="font-size:24px"> <i class="fa fa-github"></i></button>
             </div>
         </header>
         <main>
@@ -67,4 +66,41 @@
         </main>
     </div>
 </body>
+<script>
+function sendPostRequest() {
+    // Get the value from the input field
+    const username = document.getElementById('usernameInput').value;
+
+    // Create the payload
+    const data = { username: username };
+
+    // Define the URL to which the POST request will be sent
+    const url = 'https://githubresume.onrender.com'; // Replace with your actual API endpoint
+
+    // Send the POST request using fetch
+    fetch(url, {
+        method: 'POST', // Use the POST method
+        headers: {
+            'Content-Type': 'application/json' // Specify the content type
+        },
+        body: JSON.stringify(data) // Convert the payload to a JSON string
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data); // Log the response data
+        alert('Success: ' + JSON.stringify(data));
+    })
+    .catch((error) => {
+        console.error('Error:', error); // Log any errors
+        alert('Error: ' + error);
+    });
+}
+</script>
+</body>
 </html>
+  
