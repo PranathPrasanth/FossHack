@@ -8,7 +8,7 @@ body {
 #intro{
   background-image: url('images/frontpage.png');
   /* background-size: cover; */
-  background-size: contain;
+  background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
