@@ -1,17 +1,85 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
-  background-image:url('images/pexels-hngstrm-1939485.jpg');
+  background-image:url('./images/bg.jpg');
   margin: 0;
   padding: 0;
 }
+header {
+  position: relative;
+  height: 80px; /* Adjust as needed */
+  /* Background color for the header */
+}
+
+.title {
+  position: absolute;
+  margin-left: 38rem;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:cornflowerblue;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 80px; /* Adjust as needed */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  position: left;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  width: auto; /* Maintains aspect ratio */
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #4CAF50;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 #intro{
   background-image: url('images/frontpage.png');
   /* background-size: cover; */
-  background-size: cover;
+  background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
+}
+.start-button{
+  /* position: relative; */
+  margin-left: 46%;
+  margin-top: 3rem; /* Adjust top margin as needed */
+  left: 50%;
+  /* transform: translateX(-50%); */
 }
 
 .container {
@@ -49,7 +117,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
-  width: 220%;
+  width: 160%;
 }
 .form-group label {
   
@@ -65,9 +133,22 @@ header h1 {
   align-items: left;
   margin-top: 20px;
 }
+
+.GitHub-linkedin {
+  display: flex;
+  margin-top: 20px;
+}
+.form-github {
+  margin-left: 28%;
+}
+.form-linkedin {
+  margin-left: 10px;
+
+}
+
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 130%;
   padding: 9px;
   border: 1px solid #ddd;
   border-radius: 5px;
