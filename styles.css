@@ -14,6 +14,13 @@ header {
 .title {
   position: absolute;
   margin-left: 38rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .navbar {
@@ -80,7 +87,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
-  width: 220%;
+  width: 160%;
 }
 .form-group label {
   
