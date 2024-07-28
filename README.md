@@ -1,5 +1,5 @@
 Vitae Creator
-Vitae Creator is a resume builder that generates professional resumes by scraping data from your GitHub profile. Simply input your GitHub username and password, and Vitae Creator will create a resume showcasing your projects, contributions, and skills.
+Vitae Creator is a resume builder that generates professional resumes by scraping data from your GitHub profile. Simply input your GitHub username, and Vitae Creator will create a resume showcasing your projects, contributions, and skills.
 
 Table of Contents
 Features
