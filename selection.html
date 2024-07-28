@@ -19,16 +19,14 @@
             <div class="button-container">
                 <p>Connect with :</p>
                 <a href="login.html">
-                    <button class="icon_button" style="font-size:24px"> <i class="fa fa-linkedin-square"></i></button>
                     <button class="icon_button" style="font-size:24px"> <i class="fa fa-github-square"></i></button>
                 </a>
             </div>
-                <button onclick="goToResumeBuilder()">Normal Resume Builder</button>
+            <div class="manual-button">
+                <p>Or:</p>
+                <button onclick="goToResumeBuilder()">Manual Resume Builder</button>
+            </div>
                 
-                <div class="previous_works">
-                    <button onclick="goToPreviousWorks()">Previous Works</button>
-                </div>
-            
         </main>
     </div>
     <script>
@@ -44,9 +42,6 @@
 
         function goToResumeBuilder() {
             window.location.href = 'resume_builder.html';
-        }
-        function goToPreviousWorks() {
-            window.location.href = 'previous_works.html';
         }
     </script>
 </body>
