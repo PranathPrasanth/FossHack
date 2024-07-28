@@ -2,8 +2,6 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
   background-image:url('./images/bg.jpg');
-  margin: 0;
-  padding: 0;
 }
 header {
   position: relative;
@@ -71,8 +69,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-    
 }
+
 .start-button{
   /* position: relative; */
   margin-left: 46%;

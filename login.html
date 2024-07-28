@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Generator</title>
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <a href="intropage.html">
-      <img class="logo" src="images/logo.png" alt="Logo">
+        <img class="logo" src="images/logo.png" alt="Logo">
     </a>
     <div class="container">
-      <header>
-        <h1>Resume Generator</h1>
-      </header>
-      <main>
-        <form id="login-form" onsubmit="return validateLogin()">
-        <div class="GitHub-linkedin">  
-            <div class="form-group">
-              <i class="fa fa-github" style="font-size:48px;color:red"></i>
-              <label for="username"> GitHub Username</label>
-              <input type="text" id="username" name="username" required />
+        <header>
+            <h1>Login In</h1>
+        </header>
+        <main>
+            <div class="builder-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            <div class="Submit">
+                <button href="resume_builder.html">Manual Resume Builder</button>
             </div>
-        </div>
-        <button type="submit">Generate</button>
-        </form>
-      </main>
+                
+        </main>
     </div>
     <script>
-      function validateLogin() {
-        // Simple validation, can be extended
-        const username = document.getElementById("username").value;
-
-        if (username === "user") {
-          window.location.href = "login.html";
-          return false;
-        } 
-        else {
-          alert("Invalid username ");
-          return false;
+        function connectLinkedIn() {
+            // Add functionality to connect with LinkedIn
+            alert('Connecting with LinkedIn (Functionality to be added)');
         }
-      }
+
+        function connectGitHub() {
+            // Add functionality to connect with GitHub
+            alert('Connecting with GitHub (Functionality to be added)');
+        }
+
+        function goToResumeBuilder() {
+            window.location.href = 'resume_builder.html';
+        }
     </script>
-  </body>
+</body>
 </html>
