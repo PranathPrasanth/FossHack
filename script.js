@@ -96,36 +96,30 @@ function generatePDF() {
     doc.save('resume.pdf');
 }
 
-// async function sendPostRequest(user) {
-//     // Get the value from the input field
-//     let user = document.getElementById('myButton').value;
+async function sendPostRequest(user) {
+    const data = { "username": user };
 
-//     // Create the payload
-//     const data = { "username": `"${user}"` };
+    const url = 'https://githubresume.onrender.com';
 
-//     // Define the URL to which the POST request will be sent
-//     const url = 'https://githubresume.onrender.com'; // Replace with your actual API endpoint
+    try {
+        // Send the POST request using fetch
+        const response = await fetch(url, {
+            method: 'POST', // Use the POST method
+            headers: {
+                'Content-Type': 'application/json' // Specify the content type
+            },
+            body: JSON.stringify(data)
+        });
 
-//     try {
-//         // Send the POST request using fetch
-//         const response = await fetch(url, {
-//             method: 'POST', // Use the POST method
-//             headers: {
-//                 'Content-Type': 'application/json' // Specify the content type
-//             },
-//             body: JSON.parse(data) // Convert the payload to a JSON string
-//         });
+        const responseData = await response.json();
 
-//         // Parse the JSON response
-//         const data = await response.json();
+        console.log('Success:', responseData);
+    } catch (error) {
 
-//         // Log the response data
-//         console.log('Success:', data);
-//     } catch (error) {
-//         // Log any errors
-//         console.error('Error:', error);
-//     }
-// }
+        console.error('Error:', error);
+    }
+}
+
 
 
 
