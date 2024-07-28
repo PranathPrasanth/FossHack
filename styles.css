@@ -4,6 +4,20 @@ body {
   background-image:url('./images/bg.jpg');
   margin: 0;
   padding: 0;
+ 
+
+}
+body cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* margin: 0; */
+  background-color: #f0f0f0;
+}
+.cont{
+  overflow: hidden;
+    white-space: nowrap;
 }
 header {
   position: relative;
@@ -22,7 +36,20 @@ header {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
+.run_words{
+  display: inline-block;
+  font-size: 2em;
+  color: #333;
+  animation: moveText 10s linear infinite;
+}
+@keyframes run_words {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
 .navbar {
   display: flex;
   align-items: center;
