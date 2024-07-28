@@ -31,7 +31,7 @@ header {
   margin-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
+  color:cornflowerblue;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -64,6 +64,35 @@ header {
   height: 70px; /* Adjust as needed */
   width: auto; /* Maintains aspect ratio */
 }
+
+.tagline {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #4CAF50;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 #intro{
   background-image: url('images/frontpage.png');
   background-size: cover;
