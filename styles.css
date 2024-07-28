@@ -68,9 +68,10 @@ header {
 
 #intro{
   background-image: url('images/frontpage.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-size: cover; */
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 .start-button{
