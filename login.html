@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="styles.css" />
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> f97d598e618c0a9f3d5a01596da5d21711f70f26
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <a href="intropage.html">
-      <img class="logo" src="images/logo.png" alt="Logo">
+        <img class="logo" src="images/logo.png" alt="Logo">
     </a>
     <div class="container">
+<<<<<<< HEAD
       <header>
         <h1>Login</h1>
       </header>
@@ -35,21 +44,46 @@
           <button type="submit">Log In</button>
         </form>
       </main>
+=======
+        <header>
+            <h1>Login In</h1>
+        </header>
+        <main>
+            <div class="builder-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            <div class="Submit">
+                <button href="resume_builder.html">Manual Resume Builder</button>
+            </div>
+                
+        </main>
+>>>>>>> f97d598e618c0a9f3d5a01596da5d21711f70f26
     </div>
     <script>
-      function validateLogin() {
-        // Simple validation, can be extended
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-
-        if (username === "user" && password === "pass") {
-          window.location.href = "selection.html";
-          return false;
-        } else {
-          alert("Invalid username or password");
-          return false;
+        function connectLinkedIn() {
+            // Add functionality to connect with LinkedIn
+            alert('Connecting with LinkedIn (Functionality to be added)');
         }
-      }
+
+        function connectGitHub() {
+            // Add functionality to connect with GitHub
+            alert('Connecting with GitHub (Functionality to be added)');
+        }
+
+        function goToResumeBuilder() {
+            window.location.href = 'resume_builder.html';
+        }
     </script>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+</body>
+</html>
+>>>>>>> f97d598e618c0a9f3d5a01596da5d21711f70f26

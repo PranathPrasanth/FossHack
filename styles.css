@@ -2,6 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
   background-image:url('./images/bg.jpg');
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
  
@@ -18,6 +19,8 @@ body cont{
 .cont{
   overflow: hidden;
     white-space: nowrap;
+=======
+>>>>>>> f97d598e618c0a9f3d5a01596da5d21711f70f26
 }
 header {
   position: relative;
@@ -98,12 +101,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-    
 }
+
 .start-button{
   /* position: relative; */
   margin-left: 46%;
-  margin-top: 3rem; /* Adjust top margin as needed */
+  margin-top: 5rem; /* Adjust top margin as needed */
   left: 50%;
   /* transform: translateX(-50%); */
 }
@@ -113,7 +116,7 @@ header {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: z;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
@@ -126,6 +129,10 @@ header h1 {
   padding-bottom: 10px;
   border-bottom: 2px solid #007bff;
 }
+.manual-button {
+  display: flex;
+  justify-content: center;
+}
 
 .form-group {
   margin-bottom: 20px;
@@ -136,7 +143,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .builder-form {
   margin-top: 1.5rem;

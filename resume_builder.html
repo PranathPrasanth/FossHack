@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src = "script.js">
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
     <a href="intropage.html">
@@ -45,17 +51,12 @@
                 </div>
                 <div id="builder-buttons">
                     <button type="button" onclick="generateResume()">Generate Resume</button>
-                    <button onclick="goBack()">Go Back</button>                
+                    <button type="button" onclick="goBack()">Go Back</button>                
                 </div>
                 
             </form>
             <div id="resume-output" class="resume-output"></div>
         </main>
     </div>
-    <script src="script.js">
-        function goBack() {
-            window.history.back();
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,3 @@
+[submodule "FossHack"]
+	path = FossHack
+	url = https://github.com/PranathPrasanth/FossHack
