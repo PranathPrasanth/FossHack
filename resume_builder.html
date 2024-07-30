@@ -6,11 +6,8 @@
     <title>Resume Builder</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src = "script.js">
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <a href="intropage.html">
@@ -19,13 +16,14 @@
 
     <div class="container">
         <header>
-            <div class ="builder-header">
+            <div class="builder-header">
                 <h1>Resume Builder</h1>
-                <!-- <p class="description">Build your resume with ease!</p> -->
                 <div class="input-container">
-                    <input type="text" id="usernameInput" placeholder="Enter username">
-                </div>            
-                        <button onclick="sendPostRequest()" class="github-button" id="myButton" style="font-size:24px"> <i class="fa fa-github"></i></button>
+                    <input type="text" id="usernameInput" placeholder="Enter GitHub username">
+                    <button onclick="sendPostRequest()" class="github-button" id="myButton" style="font-size:24px"> 
+                        <i class="fa fa-github"></i>
+                    </button>
+                </div>
             </div>
         </header>
         <main>
@@ -58,49 +56,12 @@
                 </div>
                 <div id="builder-buttons">
                     <button type="button" onclick="generateResume()">Generate Resume</button>
-                    <button type="button" onclick="goBack()">Go Back</button>                
+                    <button type="button" onclick="goBack()">Go Back</button>
                 </div>
-                
             </form>
             <div id="resume-output" class="resume-output"></div>
         </main>
     </div>
-</body>
-<script>
-function sendPostRequest() {
-    // Get the value from the input field
-    const username = document.getElementById('usernameInput').value;
-
-    // Create the payload
-    const data = { username: username };
-
-    // Define the URL to which the POST request will be sent
-    const url = 'https://githubresume.onrender.com'; // Replace with your actual API endpoint
-
-    // Send the POST request using fetch
-    fetch(url, {
-        method: 'POST', // Use the POST method
-        headers: {
-            'Content-Type': 'application/json' // Specify the content type
-        },
-        body: JSON.stringify(data) // Convert the payload to a JSON string
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Success:', data); // Log the response data
-        alert('Success: ' + JSON.stringify(data));
-    })
-    .catch((error) => {
-        console.error('Error:', error); // Log any errors
-        alert('Error: ' + error);
-    });
-}
-</script>
 </body>
 </html>
   
