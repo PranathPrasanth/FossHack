@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <a href="intropage.html">
-        <img class="logo" src="images/logo.png" alt="Logo">
+      <img class="logo" src="images/logo.png" alt="Logo" />
     </a>
 
     <div class="container">
-        <header>
-            <div class="builder-header">
-                <h1>Resume Builder</h1>
-                <div class="input-container">
-                    <input type="text" id="usernameInput" placeholder="Enter GitHub username">
-                    <button onclick="sendPostRequest()" class="github-button" id="myButton" style="font-size:24px"> 
-                        <i class="fa fa-github"></i>
-                    </button>
-                </div>
+      <header>
+        <div class="builder-header">
+          <h1>Resume Builder</h1>
+          <div class="input-container">
+            <input
+              type="text"
+              id="usernameInput"
+              placeholder="Enter GitHub username"
+            />
+            <button
+              onclick="sendPostRequest()"
+              class="github-button"
+              id="myButton"
+              style="font-size: 24px"
+            >
+              <i class="fa fa-github"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <form id="resume-form">
+          <div class="builder-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
             </div>
-        </header>
-        <main>
-            <form id="resume-form">
-                <div class="builder-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="education">Education</label>
-                        <textarea id="education" name="education" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="experience">Experience</label>
-                        <textarea id="experience" name="experience" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="skills">Skills</label>
-                        <textarea id="skills" name="skills" required></textarea>
-                    </div>
-                </div>
-                <div id="builder-buttons">
-                    <button type="button" onclick="generateResume()">Generate Resume</button>
-                    <button type="button" onclick="goBack()">Go Back</button>
-                </div>
-            </form>
-            <div id="resume-output" class="resume-output"></div>
-        </main>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="education">Education</label>
+              <textarea id="education" name="education" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="experience">Experience</label>
+              <textarea id="experience" name="experience" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="skills">Skills</label>
+              <textarea id="skills" name="skills" required></textarea>
+            </div>
+          </div>
+          <div id="builder-buttons">
+            <button type="button" onclick="generateResume()">
+              Generate Resume
+            </button>
+            <button id="generate-pdf-button" onclick="generatePDF()">Generate PDF</button>
+
+            <button type="button" onclick="goBack()">Go Back</button>
+          </div>
+        </form>
+        <div id="resume-output" class="resume-output"></div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
-  
+
